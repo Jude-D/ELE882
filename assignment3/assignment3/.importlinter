@@ -1,0 +1,19 @@
+[importlinter]
+root_package = assignment
+include_external_packages = True
+
+[importlinter:contracts:1]
+name = scikit-image disallowed in 'assignment.filters'.
+type = forbidden
+source_modules =
+    assignment.filters
+forbidden_modules =
+    skimage
+
+[importlinter:contracts:2]
+name = scikit-image disallowed in 'assignment.sharpening'.
+type = forbidden
+source_modules =
+    assignment.sharpening
+forbidden_modules =
+    skimage
